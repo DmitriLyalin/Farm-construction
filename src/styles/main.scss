@@ -1,0 +1,25 @@
+//Base
+
+@import './base/_reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/_containers';
+@import './base/base';
+
+
+
+//blocks
+@import './blocks/nav-icon';
+@import './blocks/icons';
+@import './blocks/nav-mobile';
+@import './blocks/header';
+@import './blocks/offer';
+@import './blocks/projects';
+@import './blocks/materials';
+@import './blocks/form';
+@import './blocks/pricing';
+@import './blocks/quality';
+@import './blocks/examples';
+@import './blocks/contacts';
+@import './blocks/yandex-map';
+@import './blocks/footer';

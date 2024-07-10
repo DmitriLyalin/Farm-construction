@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Farm</title>
+</head>
+
+<body>
+  @@include('./blocks/sticky-navbar.html')
+  @@include('./blocks/header.html')
+  <main>
+    
+    @@include('./blocks/offer.html')
+    @@include('./blocks/projects.html')
+    @@include('./blocks/materials.html')
+    @@include('./blocks/pricing.html')
+    @@include('./blocks/quality.html')
+    @@include('./blocks/examples.html')
+    @@include('./blocks/contacts.html')
+
+  </main>
+  <footer class="footer">
+    @@include('./blocks/footer.html')
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=50007f39-5e39-4d3e-98dd-8818ce0dbf4f&lang=ru_RU"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./../js/index.bundle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+.contacts {
+  background-color: #fff;
+  border-radius: 1.9rem;
+  padding: max(2.5vw, 15px);
+
+  a {
+    font-size: 14px;
+    font-family: var(--font-accent), sans-serif;
+  }
+}
+// Форма с контактами
+.contacts-main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 393px 1fr;
+  gap: 20px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+//Список контактов
+.contacts-list {
+  background-color: var(--page-bg);
+  border-radius: 1.9rem;
+  color: #fff;
+  padding: 3rem 2.5rem;
+  font-size: 20px;
+  max-width: 393px;
+
+  @include tablet {
+    justify-self: center;
+  }
+}
+
+.contacts__headline {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+
+.contacts-adress {
+  margin-bottom: 2rem;
+}
+  //Адрес первая строка
+.contacts-adress>p {
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+
+.contacts-adress p+p {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+//Заголовки адрес и время
+.contacts-adress__title,
+.contacts-time__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+//Вермя текст
+.contacts-time {
+  margin-bottom: 2.5rem;
+}
+//с 10 до 18
+.contacts-time>p {
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+//Дни недели
+.contacts-time__title+p {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.contacts__button {
+  padding: 16px 24px;
+  line-height: 159%;
+  color: #235560;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.icon--arrow-accent {
+  fill: #235560;
+}
+
+//Карта Яндекс
+.map {
+  max-width: 940px;
+  max-height: 570px;
+  //скругление углов карты Яндекс
+  border-radius: 2em;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+ 
+}
+
+.marker-class {
+  background-color: #999;
+  background-image: url('./../../img/svgIcons/pinn.svg');
+  background-position: center center;
+  /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+//кнопки вверх и комментарии
+.contact-btns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.button-up,
+.comment {
+  border-radius: 16px;
+  width: 57px;
+  height: 57px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+
+//ссылки на социальные сети
+.social-media {
+  position: absolute;
+  bottom:0;
+  right:0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  padding: 16px;
+  height: 176px;
+}

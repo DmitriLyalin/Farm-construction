@@ -1,0 +1,31 @@
+.header__nav--mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 12px 2vw;
+  max-width:1440px;
+  margin: 0 auto;
+  height: 62px;
+  
+
+  & a {
+    color: var(--button-color);
+  }
+}
+ //стиль прилипающего меню
+.sticky {
+  position: sticky;
+  height: 62px;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  transform: top;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.4s;
+  transition: 0.3s ease-in;
+}

@@ -1,0 +1,71 @@
+.offer {
+  background-color: #fff;
+  border-radius: 2vw 2vw 0 0;
+  padding: max(2.5vw, 15px) 0;
+
+}
+ // стиль для контейнера с заголовком и текстом
+.offer__headrow {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 185px);
+  margin-bottom: 2rem;
+
+  @include mobile {
+      flex-direction: column;
+  }
+}
+
+.h2-text {
+  font-size: clamp(1.25rem, 0.8rem + 2.6vw, 3rem);
+  line-height: 98%;
+  letter-spacing: -0.02em;
+  color: var(--secondary-text-color);
+}
+
+.offer__subtitle {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  line-height: 137%;
+  letter-spacing: -0.02em;
+  color: var(--light-grey-text);
+  max-width: 422px;
+}
+ //стили для карточек
+.offer__cards {
+  display: flex;
+  gap: 11px;
+  
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+}
+
+.offer__card {
+  border-radius: 20px;
+  padding: min(24px, 2vw);
+  max-width: 446px;
+  max-height: 289px;
+  background-color: var(--secondary-bg-color);
+}
+
+
+
+.card__title {
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.875rem);
+  line-height: 103%;
+  letter-spacing: -0.02em;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.75rem;
+}
+
+.card__text {
+  text-wrap: pretty;
+  font-family: var(--font-accent);
+  font-weight: 500;
+  line-height: 137%;
+  letter-spacing: -0.02em;
+  color: var(--light-grey-text);
+}

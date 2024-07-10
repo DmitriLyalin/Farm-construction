@@ -1,0 +1,59 @@
+.examples {
+  background-color: var(--secondary-bg-color);
+  border-top-left-radius: 1.85rem;
+  border-top-right-radius: 1.85rem;
+  padding:  max(2.5vw, 15px);
+}
+// Картинка и текст
+.examples-flex {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.9rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 37% 50%;
+  justify-content: space-between;
+
+  @include tablet{
+    grid-template-columns: 1fr;
+    gap:1rem;
+    justify-items: center;
+  }
+  
+}
+//Левая сторона
+.examples-flex__left {
+  p {
+    
+    font-family: var(--font-accent);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 137%;
+    letter-spacing: -0.02em;
+    margin: 1.5rem 0;
+  }
+  a{
+    color: #235560;
+    font-family: var(--font-accent);
+    font-weight: 600;
+  }
+}
+
+//Картинка
+.examples-main-img{
+  border-radius: 1.3rem;
+}
+
+//Сертификат
+.examples-img {
+  max-width: 15vw;
+  position: absolute;
+  top: 60px;
+  left:40%;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+  @include tablet{
+    display: none;
+  }
+  
+}
+

@@ -1,0 +1,248 @@
+.header {
+  margin-bottom: -1.5021vw;
+  background-color: var(--page-bg);
+  padding: 14.4px 0 max(3.1vw, 20px);
+}
+//Кнопка мобильной навигации
+.header__nav-button {
+  position: fixed;
+  top: 75px;
+  right: 40px;
+}
+
+.header__nav-button--mobile {
+  top: 10px;
+  right: 40px;
+}
+
+.nav {
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__nav-button {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+//Верхний ряд с логотипом и кнопкой
+.header-top__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+//Стили обертки меню навигации и контактов
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  position: relative;
+  z-index: 1;
+  gap: 3.7vw;
+  align-items: center;
+}
+
+.header__top-row--mobile{
+    position: fixed; 
+    font-size:2rem ;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--page-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 60px;
+
+
+    & .nav{
+      display: block;
+    }
+
+    & .nav__list{
+      flex-direction: column;
+    }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.logo a {
+  font-size: clamp(1.125rem, 0.875rem + 1.25vw, 2rem);
+  line-height: 97%;
+  letter-spacing: -0.02em;
+}
+ //Общий стиль кнопок
+.button {
+  padding: max(1vw, 10px) max(1.5vw, 15px);
+  border-radius: 20px;
+  font-family: var(--font-accent);
+  line-height: 159%;
+  color: #fff;
+  background-color: rgba($color: #fff, $alpha: 0.1);
+}
+
+.top-row__button {
+  font-size: 15px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 16px;
+
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.7vw;
+
+}
+
+.nav-item {
+  list-style: none;
+}
+//наведение курсор на ссылку
+.nav-item__link {
+  &:hover {
+    color: var(--accent);
+    transition: all 0.2s ease-in-out;
+
+  }
+
+}
+
+.header-contacts {
+  display: flex;
+  gap: 4rem;
+}
+.header__top-row--mobile .header-contacts{
+  flex-direction: column;
+}
+
+.header-contacts__phone {
+  position: relative;
+
+  &::before {
+    content: url(./../../img/svgIcons/phone-icon.svg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+  }
+}
+
+.header-contacts__mail {
+  position: relative;
+
+  &::before {
+    content: url(./../../img/svgIcons/mail-icon.svg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+  }
+}
+
+.header__main {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  gap: 10px;
+  position: relative;
+  z-index: 0;
+
+  @include mobile {
+    justify-content: center;
+  }
+
+}
+ //Фоновая картинка на экране
+.Bg-icon {
+  position: absolute;
+  z-index: -1;
+  left: -30px;
+  top: -20px;
+  width: clamp(120px, 55vw, 795px);
+
+  @include mobile {
+    left: 20%;
+    top: -10px;
+  }
+
+}
+
+.header__left {
+  width: clamp(120px, 50vw, 633px);
+
+  @include mobile {
+    width: 100%;
+  }
+
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: clamp(1.5rem, 0.6786rem + 4.1071vw, 4.375rem);
+  line-height: 93%;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.12rem;
+
+}
+
+.header__subtitle {
+  font-family: var(--font-accent), sans-serif;
+  font-weight: 500;
+  opacity: 0.9;
+}
+ //Кнопки на главном экране
+.header-buttons {
+  padding-top: clamp(40px, 10vw, 164px);
+  display: flex;
+  gap: 0.75rem;
+
+}
+
+.button-main {
+  backdrop-filter: blur(20px);
+
+  @include mobile {
+    backdrop-filter: unset;
+  }
+}
+
+.accent__button {
+  background-color: #fff;
+  color: var(--secondary-text-color);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header__right {
+  width: clamp(120px, 50vw, 647px);
+  z-index: 999;
+
+  @include mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,92 @@
+.materials {
+  border-radius: 2vw;
+  padding: max(2.5vw, 15px) 0;
+  background: var(--secondary-bg-color);
+  margin-top: -1.3021vw;
+
+}
+
+//стили кнопок слайдера
+.slider__buttons {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding:4px;
+  height: 52px;
+  
+}
+
+.slider-button__left,
+.slider-button__right {
+  width: 44px;
+  height: 44px;
+  border-radius: 2rem;
+}
+.slider-button__left svg,
+.slider-button__right svg {
+  &:hover{
+   
+    transform:scale(1.2);
+    stroke:#4b4b4b;
+  }
+}
+
+.price__cards {
+  display: flex;
+  gap: 1rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.price__card {
+  border-radius: 1.85rem;
+  padding: 1.5rem;
+  max-width: 442px;
+  max-height: 229px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+}
+
+.price-card__title {
+  font-size: clamp(1.125rem, 0.9464rem + 0.8929vw, 1.75rem);
+  line-height: 82%;
+  letter-spacing: -0.02em;
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+}
+
+.price-card__subtitle {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 137%;
+  color: var(--placeholder-color);
+}
+
+.price-card__text {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 137%;
+  letter-spacing: -0.02em;
+  color: #4b4b4b;
+  grid-column: span 2;
+} 
+ //стили заголовка и стрелок 
+.materials-top__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.text-field {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

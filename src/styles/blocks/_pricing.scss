@@ -1,0 +1,31 @@
+.pricing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('./../../img/pricing-bg-img.jpg');
+  background-blend-mode: hard-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  padding-top: max(2.5vw, 15px);
+  padding-bottom: max(2.5vw, 15px) ;
+}
+
+.pricing-flex-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+}
+
+.pricing-headline {
+  line-height: 110%;
+  color: #fff;
+}

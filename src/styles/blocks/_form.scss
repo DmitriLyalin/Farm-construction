@@ -1,0 +1,245 @@
+.pricing__form {
+  border-radius: 30px;
+  padding: 32px;
+  background: #fff;
+  color: #0b0b0b;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+//поля ввода
+.text-field {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+}
+
+.name {
+  width: 100%;
+}
+
+/* стили для label */
+.text-field__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 144%;
+
+}
+
+/* стили для input */
+.text-field__input {
+  display: block;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+  background-color: var(--input-bg-color);
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 157%;
+    color: var(--placeholder-color);
+  }
+}
+
+.cattle {
+  width: 100%;
+}
+
+.select-field__input {
+  appearance: none;
+  outline: none;
+
+}
+ //Выпадающее меню
+.dropdown {
+  position: relative;
+}
+
+.dropdown__btn {
+  text-align-last: left;
+  padding: 1.25rem 1.75rem 1.25rem 1.5rem;
+  position: relative;
+
+
+  &::after {
+    content: url(./../../img/svgIcons/dropdown-arrow.svg);
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+  }
+}
+
+
+//Кастомный выпадающий список
+.dropdown__list {
+  display: none;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 60px;
+
+}
+//скрываем выпадающий список
+.dropdown__list--visible {
+  display: block;
+}
+//Стили для пунктов выпадающего списка
+.dropdown__list-item {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 0.5rem 1rem;
+
+  &:last-child {
+    border: none;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+
+  &:hover {
+    background-color: #f1fcf8;
+    cursor: pointer;
+
+
+  }
+}
+
+.dropdown__input--hidden {
+  display: none;
+}
+
+.region {
+  margin-bottom: 1.5rem;
+}
+
+.questions {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+
+  @include mobile {
+    flex-direction: column;
+
+  }
+}
+
+//Скрываем радио кнопки
+input[type="radio"] {
+  display: none;
+}
+
+.form__radiobuttons {
+  display: flex;
+  gap: 1rem;
+}
+//Стиль текста возле радио кнопок
+.form__radio label {
+  font-family: var(--font-accent), sans-serif;
+  font-size: 0.88rem;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+
+.form__radio label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(./../../img/svgIcons/Checkbox.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form__radio input[type=radio]:checked+label:before {
+  background: url(./../../img/svgIcons/Checkbox-chkd.png) 0 0 no-repeat;
+}
+
+.question__project {
+  width: 100%;
+}
+
+.question__subside {
+  width: 100%;
+}
+
+.form-question__title {
+  margin-bottom: 0.81rem;
+}
+
+.results {
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  background: #f1fcf8;
+  margin-bottom: 2rem;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+//Стиль для полей вывода суммы
+.results__left,
+.results__right {
+  width: 100%;
+
+}
+
+
+.h5-text {
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--secondary-text-color);
+}
+//текст результата суммы
+.results-one {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 96%;
+  letter-spacing: -0.02em;
+  color: var(--page-bg);
+}
+
+.form__btn {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form__download {
+  display: block;
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--page-bg);
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__disclaimer {
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  color: #999;
+}

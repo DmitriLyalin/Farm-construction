@@ -1,0 +1,42 @@
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+  @include tablet {
+    font-size: 14px;
+   }
+}
+
+body {
+  overflow-x: hidden;
+	background-color: #fff;
+	color: var(--text-color);
+	font-family: var(--font-main);
+	text-wrap: balance;
+ 
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+  cursor: pointer;
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}
+.none {
+  display: none !important;
+}

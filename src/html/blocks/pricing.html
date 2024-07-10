@@ -1,0 +1,99 @@
+<div id="pricing" class="pricing none1">
+  <div class="container">
+    <div class="pricing-flex-wrap">
+      <div class="pricing-flex-left">
+        <h2 class="h2-text pricing-headline">Рассчитайте стоимость индивидуального строительства ферм</h2>
+      </div>
+
+      <div class="pricing-flex-right">
+        <form class="pricing__form">
+          <div class="text-field">
+            <div class="name">
+              <label class="text-field__label" for="cattle">Введите кол-во поголовья скота</label>
+              <input class="text-field__input" id="cattle" placeholder="Ваш ответ" type="text">
+            </div>
+            <div class="cattle">
+              <label class="text-field__label" for="shelter">Выберите тип содержания</label>
+              <div class="dropdown">
+                <button type="button" class="text-field__input dropdown__btn">Телятник</button>
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="variant1">Вариант1</li>
+                  <li class="dropdown__list-item" data-value="variant2">Вариант2</li>
+                  <li class="dropdown__list-item" data-value="variant3">Вариант3</li>
+                  <li class="dropdown__list-item" data-value="variant4">Вариант4</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input--hidden">
+              </div>
+
+
+            </div>
+          </div>
+          <div class="region">
+            <label class="text-field__label" for="region"> Выберите регион строительства</label>
+            <div class="dropdown">
+              <button type="button" class="dropdown__btn text-field__input">Москва и МО</button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="variant1">Сант-Петербург</li>
+                <li class="dropdown__list-item" data-value="variant2">Екатеринбург</li>
+                <li class="dropdown__list-item" data-value="variant3">Самара</li>
+                <li class="dropdown__list-item" data-value="variant4">Краснодар</li>
+              </ul>
+              <input type="text" name="select-category" value="" class="dropdown__input--hidden">
+            </div>
+          </div>
+          <div class="questions">
+            <div class="question__project">
+              <label class="text-field__label form-question__title " for="gotProject">У вас есть <br>
+                проект?</label>
+              <div class="form__radiobuttons">
+                <div class="form__radio">
+                  <input type="radio" name="gotProject" id="radio-1" checked>
+                  <label for="radio-1">Да</label>
+                </div>
+                <div class="form__radio">
+                  <input type="radio" name="gotProject" id="radio-2">
+                  <label for="radio-2">Нет</label>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="question__subside">
+              <label class="text-field__label form-question__title" for="needSubside">Нужна помощь <br> с получением
+                субсидий?</label>
+              <div class="form__radiobuttons">
+                <div class="form__radio">
+                  <input type="radio" name="needSubside" id="radio-3" checked>
+                  <label for="radio-3">Да</label>
+                </div>
+                <div class="form__radio">
+                  <input type="radio" name="needSubside" id="radio-4">
+                  <label for="radio-4">Нет</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="results">
+            <div class="results__left">
+              <h5 class="h5-text"> Стоимость каркаса</h5>
+              <p class="results-one">От 6 000 000 ₽</p>
+            </div>
+            <div class="results__right">
+              <h5 class="h5-text"> Стоимость под ключ</h5>
+              <p class="results-one">От 12 000 000 ₽</p>
+            </div>
+          </div>
+          <button class="button product-card__btn form__btn"> Оставить заявку<svg
+              class="icon icon--arrow icon--arrow-white">
+              <use href="./img/svgsprite/sprite.symbol.svg#arrow"></use>
+            </svg></button>
+          <a class="form__download" href="#">Скачать пример бизнес-плана</a>
+          <p class="form__disclaimer">Стоимость расчета является предварительной.
+            Для точного расчета, оставьте заявку или звоните 8 (800) 2000-600</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
