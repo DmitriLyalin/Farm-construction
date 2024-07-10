@@ -173,7 +173,7 @@ input[type="radio"] {
 
 /* Checked */
 .form__radio input[type=radio]:checked+label:before {
-  background: url(./../../img/svgIcons/Checkbox-chkd.png) 0 0 no-repeat;
+  background: url(./../img/svgIcons/Checkbox-chkd.png) 0 0 no-repeat;
 }
 
 .question__project {
